@@ -14,16 +14,18 @@
 # and limitations under the License.
 #
 #
-import re
-
+# Phantom imports
 import phantom.app as phantom
-import xmltodict
-from jsonpath_rw import parse as jsparse
-from ncclient import manager
-from phantom.action_result import ActionResult
 from phantom.base_connector import BaseConnector
+from phantom.action_result import ActionResult
 
+# THIS Connector imports
 from junipersrx_consts import *
+
+import xmltodict
+import re
+from ncclient import manager
+from jsonpath_rw import parse as jsparse
 
 
 class JuniperConnector(BaseConnector):
